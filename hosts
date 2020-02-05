@@ -14,4 +14,9 @@ apps
 appdbs
 
 [internal:vars]
-GUID="{{ lookup('env', 'GUID') }}"
+GUID="e6d9"
+ansible_become=yes
+ansible_user=ec2-user
+ansible_ssh_private_key_file="~/.ssh/e6d9key.pem"
+ansible_ssh_common_args="-o StrictHostKeyChecking=no"
+
